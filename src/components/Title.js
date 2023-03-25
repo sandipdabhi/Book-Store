@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Title = props => {
-    console.log(props)
-    return <h1>Hello {props.name }</h1>
+
+const  Title = (props) => {
+    const {title , name } = props;
+    const {field} = props;
+    return (
+    <div>
+      <h1>Hello  {title}  and this for {name}</h1>
+      <h2>This is id {field.id},This is title {field.title}, {field.description}</h2>
+    </div>
+  )
 }
 
 export default Title
